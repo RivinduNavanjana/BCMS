@@ -1,0 +1,8 @@
+/* Custom gradient border */
+.gradient-border {
+    border-width: 2px; /* Define the border width */
+    border-style: solid;
+    border-image: linear-gradient(to right, #63b3ed, #68d391) 1;
+    border-radius: 0.375rem; /* Match Tailwind's rounded-md class */
+  }
+  
