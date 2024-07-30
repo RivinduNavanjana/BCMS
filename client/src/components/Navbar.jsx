@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className=" bg-white border-gray-200 dark:bg-gray-900">
+    <nav className=" bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-10">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="h-11" alt="SLT Logo" />
@@ -39,6 +40,7 @@ const Navbar = () => {
           </form>
         </div>
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <Link to="/AboutmeView">
           <button
             type="button"
             className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
@@ -54,6 +56,7 @@ const Navbar = () => {
               alt="user photo"
             />
           </button>
+          </Link>
           <div
             className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
             id="user-dropdown"
